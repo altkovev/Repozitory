@@ -9,9 +9,5 @@ elif x < 0 and y < 0:
 	print("III четверть")
 elif x > 0 and y < 0:
 	print("IV четверть")
-elif x == 0 and y == 0:
-	print("Точка находится в начале координат")
-elif x == 0:
-	print("На оси 'x'")
-elif y == 0:
-	print("На оси 'y'")
+elif not x or not y:
+	print("На оси")
