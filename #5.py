@@ -9,5 +9,5 @@ elif x < 0 and y < 0:
     print("III четверть")
 elif x > 0 and y < 0:
     print("IV четверть")
-elif not x or not y:
+else:
     print("На оси")
