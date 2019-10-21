@@ -1,9 +1,9 @@
 s = input('s: ')
-list = []
+lst = []
 
 while s:
-    list.append(s)
+    lst.append(s)
     s = input('s: ')
 
-for i in set(list):
-    print(f'{i} | {list.count(i)}')
+for i in set(lst):
+    print(f'{i} | {lst.count(i)}')
