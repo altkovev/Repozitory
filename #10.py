@@ -29,7 +29,7 @@ class Time:
         self.minutes = minutes
         self.seconds = seconds
         if not self._validate(): 
-        raise ValueError('Time is incorrect')
+    raise ValueError('Time is incorrect')
 
 class TimeStamp(Time):
     def __init__(self, hours, minutes, seconds):
