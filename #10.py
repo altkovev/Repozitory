@@ -12,7 +12,7 @@ class Time:
         self.minutes = int(input('Minutes: '))
         self.seconds = int(input('Seconds: '))
 
-    def _validate(self):
+    def validate(self):
         if self.hours > 23:
             return False
         elif self.minutes > 59:
@@ -23,7 +23,7 @@ class Time:
 
     def __str__(self):
         return f'{self.hours}:{self.minutes}:{self.seconds}'
-    
+            
     def set_time(self, hours, minutes, seconds):
         self.hours = hours
         self.minutes = minutes
@@ -37,10 +37,10 @@ class TimeStamp(Time):
 
 
 time = Time(12, 34, 56)
-print(time._validate())
+print(time.validate())
 print(time)
 
 now = datetime.datetime.now()
 time_stamp = TimeStamp(now.hour, now.minute, now.second)
-print(time_stamp._validate())
+print(time_stamp.validate())
 print(time_stamp)
