@@ -37,10 +37,9 @@ class TimeStamp(Time):
 
 
 time = Time(12, 34, 56)
-print(time._validate())
 print(time)
 
 now = datetime.datetime.now()
 time_stamp = TimeStamp(now.hour, now.minute, now.second)
-print(time_stamp._validate())
+
 print(time_stamp)
